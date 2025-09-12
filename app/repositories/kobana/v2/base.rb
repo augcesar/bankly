@@ -9,8 +9,6 @@ module Kobana
       def self.api
        Faraday.new(url: BASE_URL) do |faraday|
           faraday.request :url_encoded
-          faraday.request :json
-          faraday.request :json
           faraday.response :logger
           faraday.adapter Faraday.default_adapter
           faraday.headers["Authorization"] = "Bearer #{API_KEY}"

@@ -8,7 +8,7 @@ Execute no terminal:
 
 ```bash
 $ docker-compose run web bash
-$ rails console
+$ bin/rails console
 ```
 
 ## Uso
